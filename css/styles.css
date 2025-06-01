@@ -75,7 +75,12 @@ button {
   border: none;
 }
 
+address {
+  font-style: normal;
+}
+
 /* Header mobile-firs general*/
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -362,6 +367,7 @@ button {
   .contacts-list {
     flex-direction: row;
     gap: 40px;
+    align-items: center;
   }
 }
 
@@ -388,6 +394,16 @@ button {
   margin-bottom: 96px;
   padding-top: 72px;
   padding-bottom: 72px;
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .hero-main {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img/1web-studio-mobile/hero-img@2x.jpg);
+  }
 }
 
 .title {
@@ -440,6 +456,16 @@ button {
     padding-bottom: 112px;
   }
 
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-main {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/img/2web-studio-tab/Dark-bg-min@2x.jpg);
+    }
+  }
+
   .title {
     font-size: 56px;
     line-height: 1.07;
@@ -462,6 +488,16 @@ button {
     margin: 0 auto;
     padding-top: 188px;
     padding-bottom: 188px;
+  }
+
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-main {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/img/3web-studio-desk/people-office\ 1-min@2x.jpg);
+    }
   }
 
   .section {
@@ -785,7 +821,6 @@ button {
 /* desktop */
 
 @media screen and (min-width: 1158px) {
-
   .portfolio-img {
     width: 360px;
     height: 300px;

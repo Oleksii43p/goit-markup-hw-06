@@ -266,6 +266,7 @@ address {
   flex-direction: column;
   gap: 24px;
 }
+
 .contacts-link {
   transition: color var(--main-transition);
 }
@@ -307,6 +308,19 @@ address {
 }
 
 /* tab */
+
+.contacts-list .contacts-link {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--lightest-dark-blue);
+  transition: color var(--main-transition);
+}
+
+.contacts-mobile .contacts-link:hover,
+.contacts-mobile .contacts-link:focus {
+  color: var(--dark-light-blue);
+}
 
 @media screen and (min-width: 768px) {
   .header-btn {
@@ -385,14 +399,26 @@ address {
   .navigation {
     gap: 76px;
   }
-
   .contacts-list .contacts-link {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: var(--lightest-dark-blue);
-    transition: color var(--main-transition);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
+
+  .contacts-link {
+    transition: color var(--main-transition);
+    color: var(--lightest-dark-blue);
+  }
+
+  .contacts-link:hover,
+  .contacts-link:focus {
+    color: var(--dark-light-blue);
+  }
+
+  /* .contacts-link:hover,
+  .contacts-link:focus {
+    color: var(--dark-light-blue);
+  } */
 
   .contacts-list {
     flex-direction: row;

@@ -266,8 +266,12 @@ address {
 
 .contacts-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 24px;
+}
+
+.contacts-mobile .contacts-link.cont-link-active {
+  color: var(--dark-light-blue);
 }
 
 .contacts-link {
@@ -474,7 +478,6 @@ address {
   background-color: var(--dark-blue);
   text-align: center;
   min-width: 320px;
-  margin-bottom: 96px;
   padding-top: 72px;
   padding-bottom: 72px;
 }

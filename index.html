@@ -100,7 +100,9 @@ for Your Business"
                   >
                 </li>
                 <li>
-                  <a class="contacts-link" href="tel:+110001111111"
+                  <a
+                    class="contacts-link cont-link-active"
+                    href="tel:+110001111111"
                     >+11 (000) 111-11-11</a
                   >
                 </li>
@@ -719,7 +721,7 @@ for Your Business"
     </footer>
 
     <!-- BACKDROP WITH MODAL -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="close-modal-btn" type="button">
           <svg class="close-modal-btn-icon" width="8" height="8">
@@ -794,7 +796,20 @@ for Your Business"
               value="true"
               required
             />
+
             <label class="checkbox-privacy-policy-label" for="user-privacy">
+              <span class="modal-custom-checkbox">
+                <svg class="modal-checkmark" width="16" height="16">
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              <span class="checkbox-text">
+                I accept the terms and conditions of the
+                <a href="#" class="policy-terms">Privacy Policy</a>
+              </span>
+            </label>
+
+            <!-- <label class="checkbox-privacy-policy-label" for="user-privacy">
               <span class="modal-custom-checkbox">
                 <svg class="modal-checkmark" width="16" height="16">
                   <use href="./images/icons.svg#icon-checkmark"></use>
@@ -802,9 +817,9 @@ for Your Business"
               >I accept the terms and conditions of the<a
                 href="#"
                 class="policy-terms"
-                >Privacy Policy</a
+                > Privacy Policy</a
               >
-            </label>
+            </label> -->
           </div>
           <button class="modal-btn" type="submit">Send</button>
         </form>
